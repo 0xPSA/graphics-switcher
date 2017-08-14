@@ -3,6 +3,7 @@
 # General Information
 - Bash file for switching between NVIDIA and Intel's video cards
 - Besides switching between graphics cards, it also fixes the video/screen tearing when using <b> Intel cards </b>.
+- When using Intel cards, suspension works without hanging.
 - This script does not fix screen tearing on NVIDIA Graphics Cards, that's why we need to switch between them.
 - ** IMPORTANT ** This script might not work properly with NVIDIA QUADRO video cards. For more information see: https://github.com/bauca/graphics-switcher/issues/3
 
@@ -16,9 +17,13 @@
 - Nvidia binary driver - version 375.66 from nvidia-375 (proprietary, tested) (*)
 - glxinfo
 
-- <b>Tested on:</b> Ubuntu 16.04 LTS - GeForce GT 735m + Intel Mesa - SonyVAIO FIT 15
-
 (*) It might work with older or newer versions of the driver.
+
+# Tested on
+| OS               | Hardware                                       |
+| ---------------- | ---------------------------------------------- |
+| Ubuntu 16.04 LTS | GeForce GT 735m + Intel Mesa - SonyVAIO FIT 15 |
+| Ubuntu 17.04     | GeForce 945m + Intel Mesa - Acer E15           |
 
 # How to use (for dummies) / Installation
   Assuming that you have an internet connection and you have fresh installed your ubuntu 16.04 LTS, follow the instructions below:
